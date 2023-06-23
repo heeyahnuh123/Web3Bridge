@@ -2,27 +2,34 @@
 <html>
 <head>
   <title>Room Allocation System</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
   <h1>Room Allocation System</h1>
-  <div id="facility">
-    <h2>Conference Room</h2>
-    <p>Capacity: 500 people</p>
-    <button id="conference-button" onclick="allocateConferenceRoom()">Allocate Conference Room</button>
+  
+  <h2>Conference Room</h2>
+  <div class="room" id="conference-room"></div>
+  
+  <h2>Bedrooms</h2>
+  <div class="room" id="bedroom-1">
+    <button onclick="allocateBedroom(1)">Allocate Bedroom 1</button>
   </div>
-  <div id="bedrooms">
-    <h2>Bedrooms</h2>
-    <div id="bedroom-1" class="bedroom">
-      <h3>Bedroom 1</h3>
-      <button onclick="allocateBedroom(1)">Allocate Bedroom 1</button>
-    </div>
-    <div id="bedroom-2" class="bedroom">
-      <h3>Bedroom 2</h3>
-      <button onclick="allocateBedroom(2)">Allocate Bedroom 2</button>
-    </div>
-    <!-- Add more bedrooms as needed -->
+  <div class="room" id="bedroom-2">
+    <button onclick="allocateBedroom(2)">Allocate Bedroom 2</button>
   </div>
+  <div class="room" id="bedroom-3">
+    <button onclick="allocateBedroom(3)">Allocate Bedroom 3</button>
+  </div>
+  <div class="room" id="bedroom-4">
+    <button onclick="allocateBedroom(4)">Allocate Bedroom 4</button>
+  </div>
+  <div class="room" id="bedroom-5">
+    <button onclick="allocateBedroom(5)">Allocate Bedroom 5</button>
+  </div>
+  <div class="room" id="bedroom-6">
+    <button onclick="allocateBedroom(6)">Allocate Bedroom 6</button>
+  </div>
+
   <script src="index.js"></script>
 </body>
 </html>
