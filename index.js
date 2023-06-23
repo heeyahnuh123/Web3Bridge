@@ -74,6 +74,6 @@ function assignDeveloperToBedroom(developer, skillset, bedroomNumber) {
 
   if (developersList.length === 3) {
     let bedroom = document.querySelector(`#bedroom-${bedroomNumber}`);
-    bedroom.innerHTML += "<p>Bedroom is full.</p>";
+    bedroom.innerHTML += "<p>No more space, room is full!</p>";
   }
 }
